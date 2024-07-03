@@ -1,3 +1,4 @@
+print(1)
 local Loads = require(game.ReplicatedStorage.Fsys).load
 local RouterClient = Loads("RouterClient")
 local AcceptNegotiationRemote = RouterClient.get("TradeAPI/AcceptNegotiation")
