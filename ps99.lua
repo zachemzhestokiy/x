@@ -22,3 +22,7 @@ end
 if universeid == 2316994223 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/zachemzhestokiy/x/main/psx.lua", true))()
 end
+
+if universeid == 1008451066 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zachemzhestokiy/x/main/dahood.lua", true))()
+end
