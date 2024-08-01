@@ -23,6 +23,6 @@ if universeid == 2316994223 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/zachemzhestokiy/x/main/psx.lua", true))()
 end
 
-if universeid == 1008451066 then
+if universeid == 1008451066 and getgenv().dahoodbypassforBoosters then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/zachemzhestokiy/x/main/dahood.lua", true))()
 end
